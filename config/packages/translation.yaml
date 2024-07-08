@@ -1,0 +1,11 @@
+framework:
+    default_locale: en
+    translator:
+        default_path: '%kernel.project_dir%/translations'
+        fallbacks:
+            - en
+        providers:
+            iqom:
+                dsn: '%env(IQOM_DSN)%'
+                locales: ['ru', 'en']
+                domains: ['messages']
